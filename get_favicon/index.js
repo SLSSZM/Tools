@@ -44,7 +44,7 @@ function filter (data) {
         if (icon.test(t[i].attribs.rel)) {
             // 再次判断href路径是否为/favicon.ico
             if (patt.test(t[i].attribs.href)) {
-                return console.log(patt + t[i].attribs.href)
+                return console.log(path + t[i].attribs.href)
             }
             return console.log(t[i].attribs.href)
         }
