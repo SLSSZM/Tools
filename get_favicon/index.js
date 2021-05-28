@@ -4,12 +4,20 @@ const request = require('request')
 const cheerio = require('cheerio')
 
 // 测试网址
-const url = 'https://www.bilibili.com'
-// const url = 'https://developers.weixin.qq.com/miniprogram/dev/framework'
-// const url = 'https://developers.weixin.qq.com/ebook?action=get_post_info&docid=000ee2c29d4f805b0086a37a254c0a'
-// const url = 'https://www.baidu.com'
-// const url = 'https://www.w3cschool.cn/weixinapp'
-// const url = 'https://www.4399.com'
+// let url = 'https://www.bilibili.com'
+let url = 'https://developers.weixin.qq.com/miniprogram/dev/framework/'
+// let url = 'https://developers.weixin.qq.com/ebook?action=get_post_info&docid=000ee2c29d4f805b0086a37a254c0a'
+// let url = 'https://www.baidu.com'
+// let url = 'https://www.w3cschool.cn/weixinapp'
+// let url = 'https://www.4399.com'
+
+// 去除url两边空格
+url = url.trim()
+
+// 如果url最后为/则删除
+if (url[url.length - 1] === '/') {
+    url = url.substr(0, url.length - 1)
+}
 
 // 获取网址域名
 const path = url.split('/').splice(0, 3).join('/')
