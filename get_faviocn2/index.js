@@ -52,7 +52,8 @@ let scrape = async (url) => {
           return path + '/' + element.getAttribute('href')
         }
         return element.getAttribute('href')
-      } else {
+      }
+      if (element === elements[elements.length - 1]) {
         return path + '/favicon.ico'
       }
     }
