@@ -4,8 +4,8 @@ const request = require('request')
 const cheerio = require('cheerio')
 
 // 测试网址
-// let url = 'https://www.bilibili.com'
-let url = 'https://developers.weixin.qq.com/miniprogram/dev/framework/'
+let url = 'https://www.bilibili.com'
+// let url = 'https://developers.weixin.qq.com/miniprogram/dev/framework/'
 // let url = 'https://developers.weixin.qq.com/ebook?action=get_post_info&docid=000ee2c29d4f805b0086a37a254c0a'
 // let url = 'https://www.baidu.com'
 // let url = 'https://www.w3cschool.cn/weixinapp'
